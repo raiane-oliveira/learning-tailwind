@@ -10,6 +10,7 @@ import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
 import { Textarea } from '@/components/Form/Textarea'
+import { Button } from '@/components/Button'
 
 export default function Home() {
   const [currentTab, setCurrentTab] = useState('tab1')
@@ -32,19 +33,12 @@ export default function Home() {
               </span>
             </div>
             <div className="flex items-center gap-2 ">
-              <button
-                className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm transition-colors hover:bg-zinc-50"
-                type="button"
-              >
+              <Button variant="outline" type="button">
                 Cancel
-              </button>
-              <button
-                type="submit"
-                form="settings"
-                className="rounded-lg border border-violet-700 bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-violet-700"
-              >
+              </Button>
+              <Button type="submit" form="settings">
                 Save
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -175,56 +169,41 @@ export default function Home() {
                   </Select>
 
                   <div className="flex items-center gap-1">
-                    <button
-                      className="rounded-md p-2 transition-colors hover:bg-zinc-50"
-                      type="button"
-                    >
+                    <Button variant="ghost" type="button">
                       <Bold
                         aria-hidden
                         className="h-4 w-4 text-zinc-400"
                         strokeWidth={4}
                       />
-                    </button>
-                    <button
-                      className="rounded-md p-2 transition-colors hover:bg-zinc-50"
-                      type="button"
-                    >
+                    </Button>
+                    <Button variant="ghost" type="button">
                       <Italic
                         aria-hidden
                         className="h-4 w-4 text-zinc-400"
                         strokeWidth={4}
                       />
-                    </button>
-                    <button
-                      className="rounded-md p-2 transition-colors hover:bg-zinc-50"
-                      type="button"
-                    >
+                    </Button>
+                    <Button variant="ghost" type="button">
                       <Link
                         aria-hidden
                         className="h-4 w-4 text-zinc-400"
                         strokeWidth={4}
                       />
-                    </button>
-                    <button
-                      className="rounded-md p-2 transition-colors hover:bg-zinc-50"
-                      type="button"
-                    >
+                    </Button>
+                    <Button variant="ghost" type="button">
                       <List
                         aria-hidden
                         className="h-4 w-4 text-zinc-400"
                         strokeWidth={4}
                       />
-                    </button>
-                    <button
-                      className="rounded-md p-2 transition-colors hover:bg-zinc-50"
-                      type="button"
-                    >
+                    </Button>
+                    <Button variant="ghost" type="button">
                       <ListOrdered
                         aria-hidden
                         className="h-4 w-4 text-zinc-400"
                         strokeWidth={4}
                       />
-                    </button>
+                    </Button>
                   </div>
                 </div>
 
@@ -256,18 +235,10 @@ export default function Home() {
             </div>
 
             <div className="flex items-center justify-end gap-2 pt-5">
-              <button
-                className="rounded-lg border border-zinc-300 px-4 py-2 text-sm font-semibold text-zinc-700 shadow-sm transition-colors hover:bg-zinc-50"
-                type="button"
-              >
+              <Button variant="outline" type="button">
                 Cancel
-              </button>
-              <button
-                type="submit"
-                className="rounded-lg border border-violet-700 bg-violet-600 px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-violet-700"
-              >
-                Save
-              </button>
+              </Button>
+              <Button type="submit">Save</Button>
             </div>
           </form>
         </Tabs.Content>
