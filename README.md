@@ -14,7 +14,7 @@
 </p>
 
 <h4 align="center"> 
-	🚧  Learning Tailwind 🗃️ Building...  🚧
+	✔️ Learning Tailwind - Complete  ✔️
 </h4>
 
 <p align="center">
@@ -36,14 +36,15 @@ The design was offered by Rocketseat.
 
 - [x] Move between tabs with animation using Framer Motion and Radix UI.
 - [x] Preview the uploaded image
-- [ ] Implement a real editor text for the Bio section
-- [ ] Mobile version
+- [x] Mobile version
+- [x] Switch between themes
 
 
 ## 🛠 Tech Stack
 
 - TailwindCSS
 - Next.js
+  - next-themes
 - React
 - Framer Motion
 - Radix UI
