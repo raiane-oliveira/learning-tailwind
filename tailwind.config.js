@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./src/**/*.tsx'],
   theme: {
     extend: {
@@ -30,18 +31,19 @@ module.exports = {
           700: '#B42318',
           800: '#912018',
           900: '#7A271A',
-        }
+        },
       },
 
       keyframes: {
         slideDownAndFade: {
           from: { opacity: 0, transform: 'translateY(-2px)' },
-          to: { opacity: 1, transform: 'translateY(0)' }
+          to: { opacity: 1, transform: 'translateY(0)' },
         },
       },
 
       animation: {
-        slideDownAndFade: 'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
+        slideDownAndFade:
+          'slideDownAndFade 400ms cubic-bezier(0.16, 1, 0.3, 1)',
       },
     },
   },

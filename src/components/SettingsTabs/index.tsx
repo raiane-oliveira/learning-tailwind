@@ -9,7 +9,7 @@ interface SettingsTabsProps {
 
 export function SettingsTabs({ currentTab }: SettingsTabsProps) {
   return (
-    <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200">
+    <Tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200 dark:border-zinc-700">
       <TabItem
         title="My details"
         value="tab1"

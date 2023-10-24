@@ -4,7 +4,7 @@ import { Button } from '../Button'
 
 export function Profile() {
   return (
-    <div className="flex items-center gap-3 ">
+    <div className="flex items-center gap-3">
       <Image
         src="https://github.com/raiane-oliveira.png"
         alt=""
@@ -14,16 +14,16 @@ export function Profile() {
       />
 
       <div className="flex flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Raiane Oliveira
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           raiane.oliveira404@gmail.com
         </span>
       </div>
 
       <Button variant="ghost" type="button">
-        <LogOut aria-hidden className="h-5 w-5 text-zinc-500" />
+        <LogOut aria-hidden className="h-5 w-5" />
       </Button>
     </div>
   )
